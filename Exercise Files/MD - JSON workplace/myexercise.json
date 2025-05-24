@@ -1,0 +1,64 @@
+{
+    "forecast": [
+    {
+        "Monday": {
+            "description": "Sunny",
+            "maxTemperature": 22,
+            "minTemperature": 20,
+            "windSpeed": 12,
+            "dangerLevel": false
+        }
+    },
+    {
+        "Tuesday": {
+                "description": "Cloudy",
+                "maxTemperature": 18,
+                "minTemperature": 16,
+                "windSpeed": 8,
+                "dangerLevel": false
+            }
+    },
+    {
+        "Wednesday": {
+                "description": "Rainy",
+                "maxTemperature": 15,
+                "minTemperature": 13,
+                "windSpeed": 10,
+                "dangerLevel": true
+            }
+    },
+    {
+        "Thursday": {
+                "description": "Windy",
+                "maxTemperature": 17,
+                "minTemperature": 14,
+                "windSpeed": 20,
+                "dangerLevel": true
+            }
+    },
+    {
+        "Friday": {
+                "description": "Snowy",
+                "maxTemperature": 21,
+                "minTemperature": 19,
+                "windSpeed": 5,
+                "dangerLevel": false
+            }
+    },
+    {
+        "Saturday": {
+                "description": "Foggy",
+                "maxTemperature": 19,
+                "minTemperature": 17,
+                "windSpeed": 7,
+                "dangerLevel": false
+            }
+    },
+    {
+        "Sunday": null 
+    }
+    
+    
+    
+]
+}
