@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu>
+    <column>
+    <header>File</header>
+    <item>
+        <name>New</name>
+        <shortcut>Ctrl+N</shortcut>
+    </item>
+    <item>
+        <name>Open</name>
+        <shortcut>Ctrl+O</shortcut>
+    </item>
+    ...
+    </column>
+</menu>

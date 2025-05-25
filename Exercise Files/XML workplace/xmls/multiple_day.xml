@@ -1,20 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<forecast>
-   <dailyForecast>
-      <date>2015-06-01</date>
-      <description>sunny</description>
-      <maxTemp unit="C">22</maxTemp>
-      <minTemp unit="C">20</minTemp>
-      <windSpeed unit="kph">12</windSpeed>
-      <danger>false</danger>
-   </dailyForecast>
-   <dailyForecast>
-      <date>2015-06-02</date>
-      <description>windy</description>
-      <maxTemp unit="C">22</maxTemp>
-      <minTemp unit="C">20</minTemp>
-      <windSpeed unit="kph">40</windSpeed>
-      <danger>true</danger>
-   </dailyForecast>
-   <dailyForecast />
-</forecast>
+<!-- need ? question marks -->
+<?xml version="1.0" encoding="UTF-8" ?> 
+<dailyForecast>
+
+  <Monday>
+    <date>2015-06-01</date>
+    <description>sunny</description>
+    <maxTemp unit="C">22</maxTemp>
+    <minTemp unit="C">20</minTemp>
+    <windSpeed unit="kph">12</windSpeed>  
+    <danger>false</danger>
+  </Monday>
+
+  <Tuesday>
+    <date>2015-06-02</date>
+    <description>cloudy</description>
+    <maxTemp unit="C">20</maxTemp>
+    <minTemp unit="C">18</minTemp>
+    <windSpeed unit="kph">10</windSpeed>  
+    <danger>false</danger>
+  </Tuesday>
+
+  <Wednesday>
+    <date>2015-06-03</date>
+    <description>rainy</description>
+    <maxTemp unit="C">18</maxTemp>
+    <minTemp unit="C">16</minTemp>
+    <windSpeed unit="kph">15</windSpeed>  
+    <danger>true</danger>
+  </Wednesday>
+
+  <Thursday>
+    <date>2015-06-04</date>
+    <description>sunny</description>
+    <maxTemp unit="C">25</maxTemp>
+    <minTemp unit="C">22</minTemp>
+    <windSpeed unit="kph">8</windSpeed>  
+    <danger>false</danger>
+  </Thursday>
+  
+  <Friday>
+    <date>2015-06-05</date>
+    <description>partly cloudy</description>
+    <maxTemp unit="C">23</maxTemp>
+    <minTemp unit="C">21</minTemp>
+    <windSpeed unit="kph">9</windSpeed>  
+    <danger>false</danger>
+  </Friday>
+  
+</dailyForecast>
