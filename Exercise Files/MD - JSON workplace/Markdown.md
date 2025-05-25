@@ -1,18 +1,134 @@
-<!-- My documantation -->
-<!-- 
-
-Objects are JSON's dictionaries
-Most JSON has nesting.
-Table for each object type
-
-
-
-
- -->
-
-
 <!--! it will be completed for my notes -->
-This is my **documantation**
+This is my **documantation**.
+
+# JSON Notları
+
+## Temel Yapı
+
+* JSON (**JavaScript Object Notation**) verileri anahtar-değer (key-value) çiftleriyle tanımlar.
+* Hafif yapılı, okunabilir ve makine tarafından kolay işlenebilir bir formattır.
+* Genellikle **API veri alışverişi** için kullanılır.
+
+### Basit Örnek:
+
+```json
+{
+  "name": "Burak",
+  "age": 25,
+  "city": "Bursa"
+}
+```
+
+## Veri Tipleri
+
+* **String**: "text"
+* **Number**: 10, 20.5
+* **Boolean**: true, false
+* **Array**: \["a", "b", "c"]
+* **Object**: { "key": "value" }
+* **Null**: null
+
+## JSON Objects
+
+* JSON nesnesi, `{}` içinde tanımlanır
+* Anahtarlar daima **tırnak içinde** olur
+
+```json
+{
+  "product": {
+    "id": 123,
+    "name": "Laptop",
+    "specs": {
+      "ram": "16GB",
+      "cpu": "i7"
+    }
+  }
+}
+```
+
+## Arrays
+
+* JSON'da diziler `[]` ile belirtilir
+* Dizi içinde nesneler, stringler, sayılar veya dizi olabilir
+
+```json
+[
+  {
+    "name": "Ali",
+    "age": 25
+  },
+  {
+    "name": "Veli",
+    "age": 30
+  }
+]
+```
+
+## JSON vs XML
+
+| Özellik           | JSON              | XML                            |
+| ----------------- | ----------------- | ------------------------------ |
+| Yapı              | Key-Value         | Tag tabanlı                    |
+| Veri Tipi Tanımı  | Doğrudan (native) | Metin tabanlı, tip belirtilmez |
+| Okunabilirlik     | Yüksek            | Daha az okunabilir             |
+| Boyut             | Daha küçük        | Daha büyük                     |
+| Destek            | Modern API'ler    | Eski sistemlerle uyumlu        |
+| Attribute Desteği | Yok               | Var                            |
+
+## JSON Formatlama Kuralları
+
+* Anahtarlar daima tırnak içinde olmalı
+* Virgül son elemandan sonra **konulmamalıdır**
+* Boş değerler null olarak verilir
+* JSON, **tek kök objeye** sahip olmalıdır
+
+## API ve JSON
+
+* Modern API'lerin çoğu, veri iletiminde **JSON** kullanır
+* Swagger, Postman, Insomnia gibi aracılar bu yapıyı kolayca destekler
+
+## Belgeleme ve Araçlar
+
+### JSON Görselleştirme & Doğrulama:
+
+* [JSONLint](https://jsonlint.com/)
+* [Quicktype](https://quicktype.io/)
+* [Mockaroo](https://mockaroo.com/)
+
+### JSON'dan Tip Üretme:
+
+* TypeScript, C#, Java için otomatik şema dönüşümleri sağlanabilir
+
+```json
+{
+  "user": {
+    "id": 1,
+    "name": "Burak",
+    "roles": ["admin", "editor"]
+  }
+}
+```
+
+## JSON Schema
+
+* JSON yapısını doğrulamak için kullanılır
+* JSON'un XSD'si gibidir
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "age": { "type": "number" }
+  },
+  "required": ["name", "age"]
+}
+```
+
+---
+
+
 
 # Status Codes 
 Every web request returns a *status code* that says whether it was successful or had an error. The most famous status code is `404`. 

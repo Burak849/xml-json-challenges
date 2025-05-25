@@ -1,41 +1,125 @@
-<!-- 
+# XML Notları
 
-! XML notes
-Tags => you can create them for any titles like <city>Tokyo</city>
+## Tags
 
-etc:
+Etiketler, başlıkları temsil etmek için kullanılabilir:
+
+```xml
+<city>Tokyo</city>
+```
+
+### Örnek:
+
+```xml
 <color>
-<red></red>
-<blue></blue>
-<green></green>
+  <red></red>
+  <blue></blue>
+  <green></green>
 </color>
+```
 
+### Nitelikli Kullanım (Attributes ile)
+
+```xml
 <tag key="word">Can be used like this</tag>
 <cost current="USD">40.99</cost>
 <projectedValue decimal="2" confidence="5">23.90</projectedValue>
+```
 
-you have namespaces to uniquely identify them
-White space means spaces new lines tabs etc.
-White spaces doesnt matter unless its inside quotation marks
+## Namespaces
 
-Good XML formatting Guidelines:
-- In general, add an indent for every new level of tags
-- Tags that do not contain other tags can have start and end tags on the same line
-- Use line breaks if the lines are too long
-- Tags that contain other tags should be on their own lines
+* XML'de **namespace** kullanımı, etiketleri benzersiz şekilde tanımlamak için yapılır.
 
-Schemas= xml structured can be described with a schema, they can be very helpful in documenting xml and XSD files are themselves XML files, so its pretty esay to figure out how they work
+## Whitespace
 
-API requests can often use either JSON and XML. In this case, you can try to create one table that documents both formats. => table columns are the same, key names and tag names should be identical, type should be identical
+* Boşluk, satır sonu, tab gibi karakterlerdir.
+* **Tırnak içinde olmadıkça** beyaz boşlukların bir önemi yoktur.
 
-Complex types => multiple tables can be hard to identify the type
+---
 
-The biggest structural difference between JSON and XML is that XML has attributes and JSON doesnt. If API uses both XML doesnt have attributes. 
+## XML Formatlama Kuralları
+
+* Her yeni etiket seviyesi için **girinti (indentation)** eklenmeli
+* İçinde başka etiket bulunmayan tag'ler **aynı satırda** açılıp kapatılabilir
+* Satırlar çok uzunsa **satır sonu (line break)** eklenmeli
+* Diğer etiketleri içeren tag'ler **ayrı satırlarda** yer almalıdır
+
+---
+
+## Schemas
+
+* XML yapıları **şema dosyaları (XSD)** ile tanımlanabilir.
+* XSD dosyaları da birer **XML dosyasıdır**, anlaşılması kolaydır.
+* Belgelendirme ve doğrulama işlemleri için oldukça faydalıdır.
+
+---
+
+## JSON ve XML Kıyaslaması
+
+* API isteklerinde genellikle hem **JSON** hem **XML** desteklenir.
+* Aynı veriyi hem JSON hem XML ile belgelemek için tek tablo kullanılabilir.
+
+  * **Sütunlar aynı** olmalı
+  * **Anahtar ve etiket adları aynı** olmalı
+  * **Veri tipleri** aynı olmalı
+
+### Yapısal Fark
+
+* **XML**: Etiketlerde **attribute (nitelik)** kullanılabilir
+* **JSON**: Attribute yoktur, her şey key-value çiftidir
+
+---
+
+## Kullanışlı Toollar
+
+### Word Processor:
+
+* Microsoft Word, Google Docs
+
+### CMS / Wiki:
+
+* MediaWiki
+* MindTouch
+
+### Content  Management Sistemleri:
+
+* WordPress
+
+### Ticari Araçlar:
+
+* Flare
+* RoboHelp
+* Help+Manual
+
+### İşaretleme Tabanlı Çözümler:
+
+* Jekyll
+* Sphinx
+* GitHub
+* Read the Docs
+
+---
+
+## Dokümantasyon Araçları
+
+* **Swagger**
+* **Stripe API Docs**
+
+---
+
+## XSD Dosyaları
+
+* Şema dosyalarıdır
+* XML dosyalarını tanımlar
+* Kendi içinde de **XML formatındadır**
+* Belgeleme yapılabilir
+
+---
 
 
- -->
+# Çalışmalar
 
-
+## TV program
 Represents a request to record a television program.
 
 | Element | Description | Type | Required | Notes |
@@ -46,7 +130,7 @@ Represents a request to record a television program.
 | &nbsp; &nbsp; duration | Length of the program | number | Required | In hours |
 | &nbsp; &nbsp; channel | Channel to record | number | Required | |
 
-
+## TV program format
 Represents a request to record a television program.
 
 | Element | Attribute | Description | Type | Required | Notes |
